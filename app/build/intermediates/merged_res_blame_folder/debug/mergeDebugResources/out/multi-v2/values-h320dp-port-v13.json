@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.lyricslock.app-mergeDebugResources-73:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+            "map": [
+                {
+                    "source": "/home/adi/.gradle/caches/8.9/transforms/1e3b73f6b10c7abdd9b3db97196c9a63/transformed/material-1.12.0/res/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "63",
+                        "endOffsets": "114"
+                    }
+                }
+            ]
+        }
+    ]
+}

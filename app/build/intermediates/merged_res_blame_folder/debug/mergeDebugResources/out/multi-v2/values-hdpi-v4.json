@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.lyricslock.app-mergeDebugResources-73:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/home/adi/.gradle/caches/8.9/transforms/37bee8daee0ba1667b16b082c8bd1738/transformed/appcompat-1.6.1/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}
