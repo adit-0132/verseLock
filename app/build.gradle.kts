@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.lyricslock"
+    namespace = "com.verselock"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.lyricslock"
+        applicationId = "com.verselock"
         minSdk = 27
         targetSdk = 35
         versionCode = 1

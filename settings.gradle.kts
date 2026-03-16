@@ -23,5 +23,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "LyricsLock"
+rootProject.name = "verseLock"
 include(":app")

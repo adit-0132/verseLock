@@ -1,8 +1,8 @@
-# 🎵 LyricsLock
+# 🎵 verseLock
 
-**LyricsLock** is an Android app that transforms your lock screen into a real-time, time-synced lyrics display — automatically triggered whenever music starts playing. Built with Kotlin and Jetpack Compose, it hooks into the system media session to detect what's playing, fetches synced lyrics from [LRCLib](https://lrclib.net), and displays them in a stunning atmospheric UI right over your lock screen.
+**verseLock** is an Android app that transforms your lock screen into a real-time, time-synced lyrics display — automatically triggered whenever music starts playing. Built with Kotlin and Jetpack Compose, it hooks into the system media session to detect what's playing, fetches synced lyrics from [LRCLib](https://lrclib.net), and displays them in a stunning atmospheric UI right over your lock screen.
 
-> 🔐 **Privacy first:** LyricsLock never collects, transmits, or stores any personal data. Everything stays on your device.
+> 🔐 **Privacy first:** verseLock never collects, transmits, or stores any personal data. Everything stays on your device.
 
 ---
 
@@ -34,8 +34,8 @@ The lock screen features a dark atmospheric design with:
 ## 🏗️ Architecture
 
 ```
-com.lyricslock/
-├── LyricsLockApplication.kt       # App entry point; wires up Room DB & Repository
+com.verselock/
+├── verseLockApplication.kt       # App entry point; wires up Room DB & Repository
 ├── data/
 │   ├── db/                        # Room database, DAO, entity
 │   ├── model/                     # TrackInfo, LrcLine, LyricsResult
@@ -83,8 +83,8 @@ com.lyricslock/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourname/lyrics-lock.git
-   cd lyrics-lock
+   git clone https://github.com/adit-0132/verseLock.git
+   cd verseLock
    ```
 
 2. Open the project in Android Studio and let Gradle sync.
@@ -96,8 +96,8 @@ com.lyricslock/
 
 ### First-Time Setup
 
-1. **Open LyricsLock** from the app drawer.
-2. Tap **"Grant Access"** when prompted, and enable **LyricsLock** in the Notification Access settings screen.
+1. **Open verseLock** from the app drawer.
+2. Tap **"Grant Access"** when prompted, and enable **verseLock** in the Notification Access settings screen.
 3. Return to the app — the warning card will disappear once access is granted.
 4. Make sure the **"Lock Screen Lyrics"** toggle is enabled.
 5. Start playing music in any app — the lock screen will automatically appear! 🎶
@@ -120,10 +120,10 @@ com.lyricslock/
 
 ## 🔐 Privacy
 
-LyricsLock is designed to be **fully private and transparent**. Here's exactly what happens with your data:
+verseLock is designed to be **fully private and transparent**. Here's exactly what happens with your data:
 
 - **Notification access is used solely to read the currently playing track** (song title and artist) from the system `MediaSession`. It is **never** used to read, log, or transmit notification content from any other app.
-- **No data is ever sent to any server operated by LyricsLock.** The only outbound network request the app makes is an anonymous query to the public [LRCLib](https://lrclib.net) API to fetch lyrics for the current track title and artist name — the same information visible on your lock screen anyway.
+- **No data is ever sent to any server operated by verseLock.** The only outbound network request the app makes is an anonymous query to the public [LRCLib](https://lrclib.net) API to fetch lyrics for the current track title and artist name — the same information visible on your lock screen anyway.
 - **Lyrics are cached locally** in a Room database on your device and are never uploaded or shared anywhere.
 - **Album artwork** is accessed directly from the system `MediaSession` (provided by your music app) and is stored only temporarily in the app's private cache directory for display purposes.
 - **No analytics, no crash reporting, no tracking libraries** of any kind are included in the app.
@@ -135,7 +135,7 @@ In short: the notification access permission exists purely to detect what song i
 
 ## 🌐 Lyrics Source
 
-LyricsLock fetches time-synced lyrics from [**LRCLib**](https://lrclib.net):
+verseLock fetches time-synced lyrics from [**LRCLib**](https://lrclib.net):
 
 - Completely **free** and **open source**
 - **No API key** required — anonymous requests work out of the box
